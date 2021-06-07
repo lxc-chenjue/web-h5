@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        html,body {
+        	padding: 10px;
+        }
+        ul{
+            width:1200px;
+        }
+        p{
+            display:block;
+            height: 60px;
+            line-height: 60px;
+            color:white;
+            text-decoration: none;
+            text-align: center;
+        }
+        .con li:nth-child(1){
+            width:200px;
+            height:60px;
+            background-color: red;
+        }
+        .con li:nth-child(2){
+            width:200px;
+            height:60px;
+            background-color: blue;
+        }
+        .con li:nth-child(3){
+            width:200px;
+            height:60px;
+            background-color: black;
+        }
+        .con li:nth-child(4){
+            width:200px;
+            height:60px;
+            background-color: orange;
+        }
+        @media screen and (min-width: 1200px) {
+            ul {
+                width: 900px;
+            }
+            p{
+                display:block;
+                height: 60px;
+                line-height: 60px;
+                color:white;
+                text-decoration: none;
+                text-align: center;
+            }
+            ul{
+                display: flex;
+            }
+            li{
+                flex: 1;
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+            ul {
+                width: 750px;
+            }
+            .con li:nth-child(1){
+                width: 750px;
+                float:none;
+            }
+            .con li:nth-child(2){
+                width:250px; 
+                float:left;
+            }
+            .con li:nth-child(3){
+                width:250px; 
+                float:left;
+            }
+            .con li:nth-child(4){
+                width:250px; 
+                float:left;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            ul {
+                width: 800px;
+                margin: 0 auto;
+                display:block;
+            }
+            #con3{
+                width: 400px;
+            }
+            .con li:nth-child(1){
+                float:left;
+            }
+            .con li:nth-child(2){
+                float:right;
+            }
+            #con4{
+                width: 400px;
+            }
+            .con li:nth-child(3){
+                float:left;
+            }
+            .con li:nth-child(4){
+                float:right;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            ul {
+                width: 500px;
+				float: none;
+                margin: 0 auto;
+            }
+            .con li:nth-child(1){
+                width:100%;
+                height:60px;
+                background-color: red;
+            }
+            .con li:nth-child(2){
+                width:100%;
+                height:60px;
+                background-color: blue;
+            }
+            .con li:nth-child(3){
+                width:100%;
+                height:60px;
+                background-color: black;
+            }
+            .con li:nth-child(4){
+                width:100%;
+                height:60px;
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="con">
+        <li class="con1" id="con3"><p>1</p></li>
+        <li class="con2" id="con3"><p>2</p></li>
+        <li class="con2" id="con4"><p>3</p></li>
+        <li class="con2" id="con4"><p>4</p></li>
+    </ul>
+</body>
+</html>
